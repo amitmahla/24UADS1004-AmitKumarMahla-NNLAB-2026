@@ -1,0 +1,97 @@
+[Running] python -u "d:\NN\EXP-2\MLP.py"
+Training Dataset (X):
+[[0 0]
+ [0 1]
+ [1 0]
+ [1 1]]
+
+Target Output (y):
+[[0]
+ [1]
+ [1]
+ [0]]
+
+Initial Hidden Layer Weights (wh):
+[[-0.25091976  0.90142861  0.46398788  0.19731697]
+ [-0.68796272 -0.68801096 -0.88383278  0.73235229]]
+
+Initial Output Layer Weights (wo):
+[[ 0.66488528]
+ [-0.57532178]
+ [-0.63635007]
+ [-0.63319098]]
+Epoch 0  Loss: 0.315398
+Epoch 1000  Loss: 0.246875
+Epoch 2000  Loss: 0.220940
+Epoch 3000  Loss: 0.086308
+Epoch 4000  Loss: 0.018957
+Epoch 5000  Loss: 0.008973
+Epoch 6000  Loss: 0.005644
+Epoch 7000  Loss: 0.004050
+Epoch 8000  Loss: 0.003133
+Epoch 9000  Loss: 0.002542
+
+-----------------------------
+TRAINING COMPLETED
+-----------------------------
+
+Final Predicted Output (Sigmoid Values):
+[[0.04185438]
+ [0.95110897]
+ [0.95439981]
+ [0.04802241]]
+
+Final Predicted Output (Binary 0/1):
+[[0]
+ [1]
+ [1]
+ [0]]
+
+-----------------------------
+FINAL RESULT TABLE
+-----------------------------
+Input  | Expected | Predicted(Sigmoid) | Predicted(Binary)
+---------------------------------------------------------
+[0 0]   |   0      |     0.0419       |        0
+[0 1]   |   1      |     0.9511       |        1
+[1 0]   |   1      |     0.9544       |        1
+[1 1]   |   0      |     0.0480       |        0
+
+Accuracy: 100.0 %
+
+Confusion Matrix:
+[[2 0]
+ [0 2]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         2
+           1       1.00      1.00      1.00         2
+
+    accuracy                           1.00         4
+   macro avg       1.00      1.00      1.00         4
+weighted avg       1.00      1.00      1.00         4
+
+
+-----------------------------
+CUSTOM TESTING
+-----------------------------
+
+Test Inputs:
+[[0 0]
+ [0 1]
+ [1 0]
+ [1 1]]
+
+Test Prediction (Sigmoid):
+[[0.04185077]
+ [0.95111286]
+ [0.9544036 ]
+ [0.04801867]]
+
+Test Prediction (Binary):
+[[0]
+ [1]
+ [1]
+ [0]]

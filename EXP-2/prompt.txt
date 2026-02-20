@@ -1,0 +1,1 @@
+Write a Python program to implement a Multi-Layer Perceptron (MLP) Neural Network using NumPy. Train the MLP on the XOR gate dataset using the Backpropagation algorithm.
